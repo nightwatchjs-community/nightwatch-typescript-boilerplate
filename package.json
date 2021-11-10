@@ -1,0 +1,39 @@
+{
+  "name": "typescript-boilerplate",
+  "version": "0.0.1",
+  "description": "Boilerplate code for running Nightwatch tests in TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "test": "npm run clean && tsc && nightwatch --env chrome",
+    "lint": "eslint . --ext .ts",
+    "lint-and-fix": "eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vaibhavsingh97/typescript-boilerplate.git"
+  },
+  "keywords": [
+    "nightwatch",
+    "e2e",
+    "typescript"
+  ],
+  "author": "Vaibhav Singh <vaibhav.s@browserstack.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vaibhavsingh97/typescript-boilerplate/issues"
+  },
+  "homepage": "https://github.com/vaibhavsingh97/typescript-boilerplate#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "chromedriver": "^95.0.0",
+    "eslint": "^8.2.0",
+    "geckodriver": "^2.0.4"
+  },
+  "dependencies": {
+    "@types/nightwatch": "^1.3.4",
+    "nightwatch": "^2.0.0-beta.1",
+    "typescript": "^4.4.4"
+  }
+}
