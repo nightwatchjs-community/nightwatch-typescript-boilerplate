@@ -17,10 +17,10 @@ module.exports = {
   src_folders: ['dist'],
 
   // See https://nightwatchjs.org/guide/working-with-page-objects/
-  page_objects_path: ['pages/'],
+  page_objects_path: [],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/#writing-custom-commands
-  custom_commands_path: ['node_modules/nightwatch/examples/custom-commands/'],
+  custom_commands_path: [],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/#writing-custom-assertions
   custom_assertions_path: '',
