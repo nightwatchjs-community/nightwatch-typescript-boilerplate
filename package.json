@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist",
+    "build": "tsc",
+    "clean:build": "npm run clean && npm run build",
     "test": "npm run clean && tsc && nightwatch --env chrome",
     "test-browserstack": "npm run clean && tsc && nightwatch --env browserstack.chrome",
     "lint": "eslint . --ext .ts",
