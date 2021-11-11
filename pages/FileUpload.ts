@@ -1,9 +1,9 @@
 import {EnhancedPageObject} from 'nightwatch';
 
 const elements = {
-  fileUploadInput: 'input#file-upload',
-  submitButton: 'input#file-submit',
-  uploadFiles: '#uploaded-files'
+  fileUploadInput: element('input#file-upload'),
+  submitButton: element('input#file-submit'),
+  uploadFiles: element('#uploaded-files')
 };
 
 const fileUpload = {
