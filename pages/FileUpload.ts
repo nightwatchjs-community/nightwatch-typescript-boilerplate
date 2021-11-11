@@ -15,4 +15,4 @@ const fileUpload = {
 
 export default fileUpload;
 
-export type FileUploadPage = EnhancedPageObject<typeof fileUpload>; 
+export type FileUploadPage = EnhancedPageObject<typeof fileUpload>;

@@ -1,6 +1,5 @@
 import {NightwatchTests} from 'nightwatch';
 
-
 const home: NightwatchTests = {
   'iFrame test': async () => {
     const iFrame = browser.page.IFrame();

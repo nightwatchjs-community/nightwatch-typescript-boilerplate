@@ -15,4 +15,4 @@ const dragAndDrop = {
 
 export default dragAndDrop;
 
-export type DragAndDropPage = EnhancedPageObject<typeof dragAndDrop>; 
+export type DragAndDropPage = EnhancedPageObject<typeof dragAndDrop>;

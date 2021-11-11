@@ -15,14 +15,15 @@ const home: NightwatchTests = {
       .perform(function(this: any) {
         const actions = this.actions({async: true});
 
-        return actions
-          .keyDown(this.Keys['ENTER'])
-          .keyUp(this.Keys['ENTER']);
+        return actions.keyDown(this.Keys['ENTER']).keyUp(this.Keys['ENTER']);
       })
       .waitForElementVisible('.header-search-input')
       .assert.valueContains('.header-search-input', 'nightwatch')
       .waitForElementVisible('.repo-list-item:first-child')
-      .assert.containsText('.repo-list-item:first-child', 'End-to-end testing framework written in Node.js and using the Webdriver API');
+      .assert.containsText(
+        '.repo-list-item:first-child',
+        'End-to-end testing framework written in Node.js and using the Webdriver API'
+      );
   },
 
   'Github login with fake credentials': () => {
@@ -34,7 +35,10 @@ const home: NightwatchTests = {
       .setValue('#password', 'testpassword')
       .waitForElementVisible('[value=\'Sign in\']')
       .click('[value=\'Sign in\']')
-      .assert.containsText('#js-flash-container .flash.flash-error', 'Incorrect username or password.')
+      .assert.containsText(
+        '#js-flash-container .flash.flash-error',
+        'Incorrect username or password.'
+      )
       .end();
   }
 };

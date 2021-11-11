@@ -1,6 +1,5 @@
 import {NightwatchTests} from 'nightwatch';
 
-
 const home: NightwatchTests = {
   'Dropdown test': async () => {
     const dropdown = browser.page.Dropdown();
