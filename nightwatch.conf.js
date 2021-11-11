@@ -14,10 +14,10 @@ const Services = {}; loadServices();
 module.exports = {
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
-  src_folders: ['dist'],
+  src_folders: ['dist/src'],
 
   // See https://nightwatchjs.org/guide/working-with-page-objects/
-  page_objects_path: [],
+  page_objects_path: ['dist/pages'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/#writing-custom-commands
   custom_commands_path: [],
@@ -33,7 +33,7 @@ module.exports = {
   test_settings: {
     default: {
       disable_error_log: false,
-      launch_url: 'https://nightwatchjs.org',
+      launch_url: 'https://the-internet.herokuapp.com',
 
       screenshots: {
         enabled: false,
