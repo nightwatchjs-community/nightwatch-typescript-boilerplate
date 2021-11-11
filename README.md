@@ -35,7 +35,7 @@ npm install
 
 ## Available Scripts
 
-- `clean` - remove transpiled files.
+- `clean` - remove transpiled files, logs and test output.
 - `build` - transpile TypeScript to ES6,
 - `clean:build` - run both clean and build command
 - `test` - run nightwatch test,
