@@ -1,5 +1,5 @@
 # Nightwatch-typescript-boilerplate
-
+[![Build][github-action-badge]][github-action-build]
 [![TypeScript version][ts-badge]][typescript-4-4]
 [![Node.js version][nodejs-badge]][nodejs]
 [![MIT][license-badge]][license]
@@ -48,6 +48,8 @@ npm install
 Licensed under the MIT. See the [LICENSE][license] file for details.
 
 [ts-badge]: https://img.shields.io/badge/TypeScript-4.4-blue.svg
+[github-action-badge]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/actions/workflows/build.yml/badge.svg
+[github-action-build]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/actions/workflows/build.yml
 [typescript]: https://www.typescriptlang.org/
 [typescript-4-4]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-4.html
 [nodejs]: https://nodejs.org/dist/latest-v16.x/docs/api/
