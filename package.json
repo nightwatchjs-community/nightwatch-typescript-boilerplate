@@ -7,7 +7,7 @@
     "clean": "rm -rf dist logs tests_output",
     "build": "tsc",
     "clean:build": "npm run clean && npm run build",
-    "test": "npm run clean && tsc && nightwatch --env chrome --tag vaibhav",
+    "test": "npm run clean && tsc && nightwatch --env chrome",
     "test-browserstack": "npm run clean && tsc && nightwatch --env browserstack.chrome",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix"
