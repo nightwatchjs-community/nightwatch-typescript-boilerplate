@@ -4,7 +4,7 @@
   "description": "Boilerplate code for running Nightwatch tests in TypeScript",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist logs tests_output",
+    "clean": "rimraf dist logs tests_output",
     "build": "tsc",
     "clean:build": "npm run clean && npm run build",
     "test": "npm run clean && tsc && nightwatch --env chrome",
@@ -32,7 +32,8 @@
     "@typescript-eslint/parser": "^5.14.0",
     "chromedriver": "^99.0.0",
     "eslint": "^8.10.0",
-    "geckodriver": "^3.0.1"
+    "geckodriver": "^3.0.1",
+    "rimraf": "^3.0.2"
   },
   "dependencies": {
     "@types/nightwatch": "^2.0.1",
