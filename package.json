@@ -10,7 +10,8 @@
     "test": "npm run clean && tsc && nightwatch --env chrome",
     "test-browserstack": "npm run clean && tsc && nightwatch --env browserstack.chrome",
     "lint": "eslint . --ext .ts",
-    "lint-and-fix": "eslint . --ext .ts --fix"
+    "lint-and-fix": "eslint . --ext .ts --fix",
+    "rimraf": "./node_modules/rimraf/bin.js"
   },
   "repository": {
     "type": "git",
