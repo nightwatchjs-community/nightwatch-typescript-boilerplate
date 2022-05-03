@@ -8,7 +8,7 @@ const home: NightwatchTests = {
       .click('@select', () => {
         dropdown.click('option[value=\'2\']');
       })
-      .assert.value('@select', '2');
+      .assert.valueEquals('@select', '2');
 
     browser.end();
   }
