@@ -1,12 +1,12 @@
 # Nightwatch-typescript-boilerplate
 [![Build][github-action-badge]][github-action-build]
-[![TypeScript version][ts-badge]][typescript-4-4]
+[![TypeScript version][ts-badge]][typescript-4-7]
 [![Node.js version][nodejs-badge]][nodejs]
 [![MIT][license-badge]][license]
 
 🧑‍💻 Developer ready: This project shows example of Nightwatch end-to-end tests written in typescript.
 
-- [TypeScript][typescript] [4.4][typescript-4-4]
+- [TypeScript][typescript] [4.7][typescript-4-7]
 - [ESLint][eslint] with some initial rules recommendation
 - NPM [scripts](#available-scripts) for common operations
 - Simple example of TypeScript code
@@ -39,7 +39,7 @@ npm install
 - `build` - transpile TypeScript to ES6,
 - `clean:build` - run both clean and build command
 - `test` - run nightwatch test,
-- `test-browserstack` - run nightwatch tests on browserstack,
+- `test-browserstack` - run nightwatch tests on browserstack. (To run test in Browserstack, create `.env` file with the credentials)
 - `lint` - lint source files,
 - `lint-and-fix` - lint source files and fix the lint issue
 
@@ -47,11 +47,11 @@ npm install
 
 Licensed under the MIT. See the [LICENSE][license] file for details.
 
-[ts-badge]: https://img.shields.io/badge/TypeScript-4.4-blue.svg
+[ts-badge]: https://img.shields.io/badge/TypeScript-4.7-blue.svg
 [github-action-badge]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/actions/workflows/build.yml/badge.svg
 [github-action-build]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/actions/workflows/build.yml
 [typescript]: https://www.typescriptlang.org/
-[typescript-4-4]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-4.html
+[typescript-4-7]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-7.html
 [nodejs]: https://nodejs.org/dist/latest-v16.x/docs/api/
 [nodejs-badge]: https://img.shields.io/badge/Node.js->=%2010.0.0-blue.svg
 [license]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/blob/main/LICENSE.md
