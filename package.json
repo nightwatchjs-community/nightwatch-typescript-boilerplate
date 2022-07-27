@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf dist logs tests_output",
     "test": "npm run clean && nightwatch --env chrome",
-    "test-browserstack": "npm run clean && nightwatch --env browserstack.chrome",
+    "test-browserstack": "npm run clean && nightwatch --env browserstack.chrome --verbose",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix"
   },
