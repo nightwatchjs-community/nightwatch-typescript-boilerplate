@@ -26,15 +26,16 @@
   },
   "homepage": "https://github.com/vaibhavsingh97/typescript-boilerplate#readme",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.31.0",
-    "@typescript-eslint/parser": "^5.31.0",
-    "chromedriver": "^103.0.0",
-    "eslint": "^8.20.0",
-    "geckodriver": "^3.0.2"
+    "@typescript-eslint/eslint-plugin": "^5.37.0",
+    "@typescript-eslint/parser": "^5.37.0",
+    "chromedriver": "^105.0.0",
+    "eslint": "^8.23.1",
+    "geckodriver": "^3.0.2",
+    "ts-node": "^10.9.1"
   },
   "dependencies": {
-    "@types/nightwatch": "^2.3.0",
-    "nightwatch": "^2.3.0",
-    "typescript": "^4.7.4"
+    "@types/nightwatch": "^2.3.10",
+    "nightwatch": "^2.3.7",
+    "typescript": "^4.8.3"
   }
 }
