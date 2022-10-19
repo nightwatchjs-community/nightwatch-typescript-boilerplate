@@ -15,7 +15,7 @@
     "ecmaFeatures": {
       "jsx": false
     },
-    "project": "./tsconfig.json"
+    "project": "./tsconfig.nightwatch.json"
   },
   "env": {
     "mocha": true,
