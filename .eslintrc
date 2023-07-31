@@ -17,6 +17,12 @@
     },
     "project": ["./tsconfig.json", "./nightwatch/tsconfig.json"]
   },
+  "overrides": [
+    {
+      "extends": ["plugin:@typescript-eslint/disable-type-checked"],
+      "files": ["./**/*.js"]
+    }
+  ],
   "env": {
     "mocha": true,
     "node": true
