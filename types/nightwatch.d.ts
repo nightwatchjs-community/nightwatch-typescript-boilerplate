@@ -10,4 +10,8 @@ declare module 'nightwatch' {
     FileUpload(): FileUploadPage;
     IFrame(): iFramePage;
   }
+
+  interface NightwatchCustomCommands {
+    strictClick(selector: string | ElementProperties): Awaitable<this, null>
+  }
 }

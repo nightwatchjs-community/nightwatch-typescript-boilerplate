@@ -21,7 +21,7 @@ module.exports = {
   page_objects_path: ['nightwatch/pages'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html
-  custom_commands_path: [],
+  custom_commands_path: ['nightwatch/custom-commands'],
 
   // See https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html
   custom_assertions_path: '',

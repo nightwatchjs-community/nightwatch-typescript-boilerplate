@@ -9,7 +9,7 @@ const home: NightwatchTests = {
     fileUpload
       .navigate()
       .uploadFile('@fileUploadInput', filePath)
-      .click(fileUpload.elements.submitButton)
+      .strictClick(fileUpload.elements.submitButton)
       .expect.element('@uploadFiles').text.to.equal('test.txt');
     browser.end();
   }
