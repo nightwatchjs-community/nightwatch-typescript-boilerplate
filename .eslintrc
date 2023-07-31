@@ -10,12 +10,12 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": false
     },
-    "project": "./tsconfig.json"
+    "project": ["./tsconfig.json", "./nightwatch/tsconfig.json"]
   },
   "env": {
     "mocha": true,

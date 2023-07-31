@@ -14,5 +14,6 @@
   },
   "ts-node": {
     "swc": true
-  }
+  },
+  "include": ["."]
 }
