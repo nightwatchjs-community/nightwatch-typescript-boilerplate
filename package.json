@@ -4,11 +4,9 @@
   "description": "Boilerplate code for running Nightwatch tests in TypeScript",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf dist logs tests_output",
-    "build": "tsc",
-    "clean:build": "npm run clean && npm run build",
-    "test": "npm run clean && tsc && nightwatch --env chrome",
-    "test-browserstack": "npm run clean && tsc && nightwatch --env browserstack.chrome",
+    "clean": "rm -rf logs tests_output",
+    "test": "npm run clean && nightwatch --env chrome",
+    "test-browserstack": "npm run clean && nightwatch --env browserstack.chrome",
     "lint": "eslint . --ext .ts",
     "lint-and-fix": "eslint . --ext .ts --fix"
   },
@@ -28,11 +26,13 @@
   },
   "homepage": "https://github.com/vaibhavsingh97/typescript-boilerplate#readme",
   "devDependencies": {
+    "@swc/core": "^1.3.72",
     "@typescript-eslint/eslint-plugin": "^5.31.0",
     "@typescript-eslint/parser": "^5.31.0",
     "chromedriver": "^103.0.0",
     "eslint": "^8.20.0",
-    "geckodriver": "^3.0.2"
+    "geckodriver": "^3.0.2",
+    "ts-node": "^10.9.1"
   },
   "dependencies": {
     "@types/nightwatch": "^2.3.0",
