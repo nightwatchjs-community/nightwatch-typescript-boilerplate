@@ -1,4 +1,4 @@
-import {EnhancedPageObject} from 'nightwatch';
+import {EnhancedPageObject, PageObjectModel} from 'nightwatch';
 
 const elements = {
   iframe: '#mce_0_ifr',
@@ -10,8 +10,9 @@ const iFrame = {
     return `${this.api.launch_url}/iframe`;
   },
   elements
-};
+} satisfies PageObjectModel;
+
+export interface iFramePage extends
+  EnhancedPageObject<{}, typeof elements, {}, {}, () => string> {} // eslint-disable-line @typescript-eslint/ban-types
 
 export default iFrame;
-
-export type iFramePage = EnhancedPageObject<typeof iFrame>;

@@ -14,4 +14,6 @@
     "strictNullChecks": true,
     "skipLibCheck": true
   },
+  "files": ["types/nightwatch.d.ts"],
+  "include": ["test"]
 }

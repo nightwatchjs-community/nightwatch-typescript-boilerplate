@@ -1,9 +1,9 @@
-import {EnhancedPageObject} from 'nightwatch';
+import {EnhancedPageObject, PageObjectModel} from 'nightwatch';
 
 const elements = {
-  fileUploadInput: element('input#file-upload'),
-  submitButton: element('input#file-submit'),
-  uploadFiles: element('#uploaded-files')
+  fileUploadInput: 'input#file-upload',
+  submitButton: 'input#file-submit',
+  uploadFiles: '#uploaded-files'
 };
 
 const fileUpload = {
@@ -11,8 +11,9 @@ const fileUpload = {
     return `${this.api.launch_url}/upload`;
   },
   elements
-};
+} satisfies PageObjectModel;
+
+export interface FileUploadPage extends
+  EnhancedPageObject<{}, typeof elements, {}, {}, () => string> {} // eslint-disable-line @typescript-eslint/ban-types
 
 export default fileUpload;
-
-export type FileUploadPage = EnhancedPageObject<typeof fileUpload>;
