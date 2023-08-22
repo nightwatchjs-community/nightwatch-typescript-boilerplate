@@ -9,6 +9,7 @@ const home: NightwatchTests = {
     fileUpload
       .navigate()
       .uploadFile('@fileUploadInput', filePath)
+      // alternate way of passing an element instead of '@submitButton'
       .strictClick(fileUpload.elements.submitButton)
       .expect.element('@uploadFiles').text.to.equal('test.txt');
     browser.end();

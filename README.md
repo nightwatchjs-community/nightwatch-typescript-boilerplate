@@ -1,20 +1,28 @@
 # Nightwatch-typescript-boilerplate
 [![Build][github-action-badge]][github-action-build]
-[![TypeScript version][ts-badge]][typescript-4-7]
+[![TypeScript version][ts-badge]][typescript-4-9]
 [![Node.js version][nodejs-badge]][nodejs]
 [![MIT][license-badge]][license]
 
 🧑‍💻 Developer ready: This project shows example of Nightwatch end-to-end tests written in typescript.
 
-- [TypeScript][typescript] [4.7][typescript-4-7]
+- [Basic Examples using TypeScript](/nightwatch/examples/)
+- Examples using [Page Object Model][page-object-model]
+  - [Page Object Definitions](/nightwatch/pages/)
+    - [Using satisfies operator](/nightwatch/pages/FileUpload.ts)
+    - [Without satisfies operator](/nightwatch/pages/Dropdown.ts) (for TypeScript < 4.9)
+    - [Using Page Object Sections](/nightwatch/pages/DragAndDrop.ts)
+  - [Page Object Examples](/test/)
+
+
+Other features:
+- [TypeScript][typescript] [4.9][typescript-4-9]
 - [ESLint][eslint] with some initial rules recommendation
 - NPM [scripts](#available-scripts) for common operations
-- Simple example of TypeScript code
 - [.editorconfig][editorconfig] for consistent file format
 - VSCode Integration
 - Multiple Configurations ([Chromedriver][chromedriver], [Cucumberjs][cucumberjs], [Browserstack][browserstack])
 - Cross Platform Example Tests
-- [Page Object Model][page-object-model]
 
 ## Getting started
 
@@ -51,9 +59,9 @@ Licensed under the MIT. See the [LICENSE][license] file for details.
 [github-action-badge]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/actions/workflows/build.yml/badge.svg
 [github-action-build]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/actions/workflows/build.yml
 [typescript]: https://www.typescriptlang.org/
-[typescript-4-7]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-7.html
+[typescript-4-9]: https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html
 [nodejs]: https://nodejs.org/dist/latest-v16.x/docs/api/
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2010.0.0-blue.svg
+[nodejs-badge]: https://img.shields.io/badge/Node.js-%3E=%2016.0.0-blue.svg
 [license]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/blob/main/LICENSE.md
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
 [eslint]: https://github.com/eslint/eslint
