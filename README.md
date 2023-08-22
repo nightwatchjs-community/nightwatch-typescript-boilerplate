@@ -15,7 +15,7 @@
   - [Page Object Examples](/test/)
 
 
-Other features:
+### Other features:
 - [TypeScript][typescript] [4.9][typescript-4-9]
 - [ESLint][eslint] with some initial rules recommendation
 - NPM [scripts](#available-scripts) for common operations

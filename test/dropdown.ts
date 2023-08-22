@@ -1,17 +1,14 @@
-import {NightwatchTests} from 'nightwatch';
+describe('Dropdown', function() {
+  it('Dropdown test', function() {
+    const dropDownPage = browser.page.Dropdown();
 
-const home: NightwatchTests = {
-  'Dropdown test': async () => {
-    const dropdown = browser.page.Dropdown();
-    dropdown
+    dropDownPage
       .navigate()
       .click('@select', () => {
-        dropdown.click('option[value=\'2\']');
+        dropDownPage.click('option[value=\'2\']');
       })
       .assert.valueEquals('@select', '2');
 
     browser.end();
-  }
-};
-
-export default home;
+  });
+});

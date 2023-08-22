@@ -1,19 +1,18 @@
-import {NightwatchTests} from 'nightwatch';
 import path from 'path';
 
 const filePath = path.join(path.resolve('.'), 'asset/test.txt');
 
-const home: NightwatchTests = {
-  'File Upload test': () => {
-    const fileUpload = browser.page.FileUpload();
-    fileUpload
+describe('File Upload', function() {
+  it('File Upload test', function() {
+    const fileUploadPage = browser.page.FileUpload();
+
+    fileUploadPage
       .navigate()
       .uploadFile('@fileUploadInput', filePath)
       // alternate way of passing an element instead of '@submitButton'
-      .strictClick(fileUpload.elements.submitButton)
+      .strictClick(fileUploadPage.elements.submitButton)
       .expect.element('@uploadFiles').text.to.equal('test.txt');
-    browser.end();
-  }
-};
 
-export default home;
+    browser.end();
+  });
+});

@@ -1,14 +1,14 @@
-import {NightwatchTests} from 'nightwatch';
+describe('iFrame', function() {
+  it('iFrame test', async function() {
+    const iFramePage = browser.page.IFrame();
 
-const home: NightwatchTests = {
-  'iFrame test': async () => {
-    const iFrame = browser.page.IFrame();
-    iFrame.navigate();
-    browser.frame(iFrame.elements.iframe.selector);
-    iFrame.expect.element('@textbox').text.to.equal('Your content goes here.');
+    iFramePage.navigate();
+
+    // `frame` command is not directly available on page-object.
+    browser.frame(iFramePage.elements.iframe.selector);
+
+    iFramePage.expect.element('@textbox').text.to.equal('Your content goes here.');
 
     browser.end();
-  }
-};
-
-export default home;
+  });
+});

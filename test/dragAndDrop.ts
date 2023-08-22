@@ -1,9 +1,9 @@
-import {NightwatchTests} from 'nightwatch';
+describe('Drag and Drop', function() {
+  this.disabled = true;
 
-const home: NightwatchTests = {
-  disabled: true,
-  'Drag and Drop test': async () => {
+  it('Drag and Drop test', async function(browser) {
     const dragAndDropPage = browser.page.DragAndDrop();
+
     dragAndDropPage.navigate();
 
     // perform drag and drop action
@@ -15,7 +15,5 @@ const home: NightwatchTests = {
     columnASection.expect.element('@header').text.to.equal('B');
 
     browser.end();
-  }
-};
-
-export default home;
+  });
+});
