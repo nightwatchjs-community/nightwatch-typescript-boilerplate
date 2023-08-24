@@ -13,7 +13,7 @@
     - [Without satisfies operator](/nightwatch/pages/Dropdown.ts) (for TypeScript < 4.9)
     - [Using Page Object Sections](/nightwatch/pages/DragAndDrop.ts)
   - [Page Object Examples](/test/)
-- [Custom command example](/nightwatch/custom-commands/)
+- [Custom command example](/nightwatch/custom-commands/strictClick.ts)
 
 
 ### Other features:
