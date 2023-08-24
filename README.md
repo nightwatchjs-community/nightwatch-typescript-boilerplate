@@ -1,4 +1,4 @@
-# Nightwatch-typescript-boilerplate
+# Nightwatch Typescript Boilerplate
 [![Build][github-action-badge]][github-action-build]
 [![TypeScript version][ts-badge]][typescript-4-9]
 [![Node.js version][nodejs-badge]][nodejs]
@@ -13,6 +13,7 @@
     - [Without satisfies operator](/nightwatch/pages/Dropdown.ts) (for TypeScript < 4.9)
     - [Using Page Object Sections](/nightwatch/pages/DragAndDrop.ts)
   - [Page Object Examples](/test/)
+- [Custom command example](/nightwatch/custom-commands/)
 
 
 ### Other features:
@@ -55,7 +56,7 @@ npm install
 
 Licensed under the MIT. See the [LICENSE][license] file for details.
 
-[ts-badge]: https://img.shields.io/badge/TypeScript-4.7-blue.svg
+[ts-badge]: https://img.shields.io/badge/TypeScript-4.9-blue.svg
 [github-action-badge]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/actions/workflows/build.yml/badge.svg
 [github-action-build]: https://github.com/nightwatchjs/nightwatch-typescript-boilerplate/actions/workflows/build.yml
 [typescript]: https://www.typescriptlang.org/
