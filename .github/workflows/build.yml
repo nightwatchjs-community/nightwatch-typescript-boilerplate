@@ -1,4 +1,4 @@
-name = build
+Name : Build
 name: Setup Go environment
   uses: actions/setup-go@v4.1.0
   with:
