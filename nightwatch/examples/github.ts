@@ -1,10 +1,10 @@
-import {NightwatchTests} from 'nightwatch';
+import {NightwatchAPI, NightwatchTests} from 'nightwatch';
 
 const home: NightwatchTests = {
   'Github Title test': () => {
     browser
       .url('https://github.com')
-      .assert.titleEquals('GitHub: Where the world builds software · GitHub');
+      .assert.titleContains('GitHub');
   },
 
   'Github search for nightwatch repository': () => {
@@ -12,16 +12,16 @@ const home: NightwatchTests = {
       .url('https://github.com/search')
       .clearValue('[placeholder=\'Search GitHub\']')
       .setValue('[placeholder=\'Search GitHub\']', 'nightwatch')
-      .perform(function(this: any) {
+      .perform(function(this: NightwatchAPI) {
         const actions = this.actions({async: true});
 
         return actions.keyDown(this.Keys['ENTER']).keyUp(this.Keys['ENTER']);
       })
-      .waitForElementVisible('.header-search-input')
-      .assert.valueContains('.header-search-input', 'nightwatch')
-      .waitForElementVisible('.repo-list-item:first-child')
+      .waitForElementVisible('.header-search-button')
+      .assert.textEquals('.header-search-button', 'nightwatch')
+      .waitForElementVisible('div[data-testid="results-list"]:first-child')
       .assert.textContains(
-        '.repo-list-item:first-child',
+        'div[data-testid="results-list"]:first-child',
         'End-to-end testing framework written in Node.js and using the W3C Webdriver API'
       );
   },

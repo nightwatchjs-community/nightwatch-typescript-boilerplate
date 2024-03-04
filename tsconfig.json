@@ -1,24 +1,19 @@
 {
   "compilerOptions": {
-    "rootDirs": ["./pages", "./src"],
-    "strict": true,
+    "target": "esnext",
     "module": "commonjs",
+    "moduleResolution": "node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "target": "esnext",
-    "moduleResolution": "node",
-    "sourceMap": false,
-    "outDir": "dist",
     "resolveJsonModule": true,
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "strictNullChecks": true,
     "skipLibCheck": true
-    // "typeRoots": [
-    //   "./custom-typings",
-    //   "./node_modules/@types"
-    // ]
   },
+  "files": ["types/nightwatch.d.ts"],
+  "include": ["test"]
 }

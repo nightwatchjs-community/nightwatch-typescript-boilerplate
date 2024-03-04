@@ -10,13 +10,19 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "parserOptions": {
-    "ecmaVersion": 2018,
+    "ecmaVersion": "latest",
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": false
     },
-    "project": "./tsconfig.json"
+    "project": ["./tsconfig.json", "./nightwatch/tsconfig.json"]
   },
+  "overrides": [
+    {
+      "extends": ["plugin:@typescript-eslint/disable-type-checked"],
+      "files": ["./**/*.js"]
+    }
+  ],
   "env": {
     "mocha": true,
     "node": true
